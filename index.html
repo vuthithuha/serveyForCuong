@@ -4,7 +4,7 @@
         <title>Khảo sát nho nhỏ cho bạn Cường</title>
         <style>
            
-       h1 { color : #f12713;
+       h1, h2 { color : #f12713;
          font-family: cursive;
          font-size: 70px;
          margin-top:10%;
@@ -12,23 +12,23 @@
          margin-bottom:6%;
          margin-left:10%;}
       
-            button {
-                width: 120px;
-                height: 65px;
-                color: #fff;
-                font-size: 20px;
-                background-color: #000;
-                border: none;
-                border-radius: 40px;
-                position: absolute;
+         .button {
+             width: 120px;
+             height: 65px;
+             color: #fff;
+             font-size: 20px;
+             background-color: #000;
+             border: none;
+             border-radius: 40px;
+             position: absolute;
               
-                top: 50%;
-                left:50%;
+             top: 50%;
+             left:50%;
             }
 
-            button.yes {
-                background-color: #f60;
-                left: 35%;
+            .button.yes {
+              background-color: #f60;
+              left: 35%;
             }
         </style>
         <script>
@@ -95,7 +95,10 @@
     </head>
     <body onload="onload()">
         <h1>Cường thích làm hết việc nhà?</h1>
-        <button class="yes" onclick="alert('Oh Yeah! Cường muốn tự mình làm hết việc nhà!')">Có</button>
-        <button id="button" onclick="alert('Oh No! Cường chắc chắn chứ?')">Không</button>
+        <button1 class="yes" onclick="alert('Oh Yeah! Cường muốn tự mình làm hết việc nhà!')">Có</button>
+        <button1 id="button" onclick="alert('Oh No! Cường chắc chắn chứ?')">Không</button>
+        <h2></h2>
+        <button2 class="button" onclick="alert('Oh Yeah! ')">có-2</button>
+        <button2 class="button" onclick="alert('Oh No! ')">không-2</button>
     </body>
 </html>
